@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     //URL обработка
     private class GetURLData extends AsyncTask<String, String, String> {
 
-        private void opPreExecute() {
+        protected void onPreExecute() {
             //срабатывает при отправление данных по URL адресу
             super.onPreExecute();
             result.setText("Ожидайте...");
