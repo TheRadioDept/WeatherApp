@@ -98,7 +98,12 @@ public class MainActivity extends AppCompatActivity {
         protected void onPostExecute(String result_info){
             super.onPostExecute(result_info);
 
-            result.setText(result_info);
+            try {
+               JSONObject obj = new JSONObject(result_info);
+               result.setText("Температура: " + obj.getJSONObject("main").getDouble("temp"));
+           } catch (JSONException e) {
+               e.printStackTrace();
+           }
        }
     }
 }
