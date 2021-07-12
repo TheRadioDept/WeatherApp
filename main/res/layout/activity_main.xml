@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#333"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/logo"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:layout_marginTop="50sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="100sp"
+        android:layout_marginHorizontal="50sp"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/black"
+        android:hint="@string/hint_user_field"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        />
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@id/user_field"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="130sp"
+        android:backgroundTint="@color/teal_700"
+        android:text="@string/mainButton"
+        />
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainButton"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/Primary"
+        android:textSize="25sp"
+        android:layout_marginTop="50sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+</RelativeLayout>
+
