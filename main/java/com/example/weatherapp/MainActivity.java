@@ -32,10 +32,13 @@ public class MainActivity extends AppCompatActivity {
         user_filed = findViewById(R.id.user_field);
         mainButton = findViewById(R.id.mainButton);
         result = findViewById(R.id.result);
-
+           
+        //setOnClickListener функция для работы кнопки и выполнения кода при нажатии. 
+        
         mainButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Проверка на пустое значение ввода пользователя
                 if (user_filed.getText().toString().trim().equals(""))
                     Toast.makeText(MainActivity.this, R.string.no_usr_intput, Toast.LENGTH_LONG).show();
                 else {
